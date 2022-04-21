@@ -9,9 +9,12 @@ const connect = function () {
     conn.write('Name: AJA');
   });
   conn.on("connect", () => {
-    conn.write("Move: up")
+    setTimeout(() => conn.write("Move: up"), 50)
+    setTimeout(() => conn.write("Move: right"), 100)
+    setTimeout(() => conn.write("Move: down"), 150)
+    setTimeout(() => conn.write("Move: left"), 200)
   });
-  
+
   conn.on("data", (data) => {
     console.log(data)
   });
