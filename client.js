@@ -11,14 +11,9 @@ const connect = function() {
   });
 
   conn.on("data", (data) => {
-    console.log(data)
-  //   conn.write("Say: You can't catch me")
+    console.log(data);
   });
   
-
-  
-  
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
