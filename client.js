@@ -1,23 +1,19 @@
 const net = require("net");
-const connect = function () {
+const connect = function() {
   const conn = net.createConnection({
     host: 'localhost',
     port: 50541
   });
-  conn.on('connect', (connect) => {
-    console.log('Succesfully connnected to game server')
+  conn.on('connect', () => {
+    console.log('Succesfully connnected to game server');
     conn.write('Name: AJA');
   });
-  conn.on("connect", () => {
-    setTimeout(() => conn.write("Move: up"), 50)
-    setTimeout(() => conn.write("Move: right"), 100)
-    setTimeout(() => conn.write("Move: down"), 150)
-    setTimeout(() => conn.write("Move: left"), 200)
-  });
 
-  conn.on("data", (data) => {
-    console.log(data)
-  });
+  // conn.on("data", (data) => {
+  //   console.log(data)
+  //   conn.write("Say: You can't catch me")
+  // });
+  
 
   
   
