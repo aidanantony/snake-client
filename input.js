@@ -1,5 +1,5 @@
 let connection;
-/* Our function below takes user input and uses 
+/* Our function below takes user input and uses
 the conditional inside to check what to do with that
 input or whether to show us a message on our game.
 */

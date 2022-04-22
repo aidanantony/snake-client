@@ -7,7 +7,7 @@ const connect = function() {
   });
   /*
   When connection is established, this conn.on logs the
-  message below to let us know connection was succesful. 
+  message below to let us know connection was succesful.
   It also shows our name and initials at the beginning of game.
   */
   conn.on('connect', () => {
